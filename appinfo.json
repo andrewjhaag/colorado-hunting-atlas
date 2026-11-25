@@ -1,0 +1,11 @@
+{
+  "id": "com.andrewhaag.cohunt",
+  "version": "0.1.1",
+  "vendor": "Andrew Haag",
+  "type": "web",
+  "main": "index.html",
+  "title": "Colorado Hunting Atlas",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "requiredACG": []
+}

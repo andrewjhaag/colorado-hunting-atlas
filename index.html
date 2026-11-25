@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colorado Hunting Atlas</title>
+<link rel="stylesheet" href="lib/leaflet.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="cross" class="hidden"></div>
+
+<div id="header" class="panel">
+  <div id="title">Colorado Hunting Atlas <span class="ver" id="version"></span></div>
+  <div id="sub">2026 Big Game &middot; from the ArcGIS Pro atlas</div>
+  <div id="status">Loading&hellip;</div>
+  <div id="layersbtn">Layers <span class="key">red</span></div>
+</div>
+
+<div id="legend" class="panel"></div>
+
+<div id="menu" class="panel hidden">
+  <div id="menuhead">Layers</div>
+  <div id="menulist"></div>
+  <div id="menufoot"><span class="key">&#9650;&#9660;</span> choose &nbsp; <span class="key">OK</span> on/off &nbsp; <span class="key">Back</span> close &nbsp; or point and click</div>
+</div>
+
+<div id="pop" class="panel hidden">
+  <div id="pophead">
+    <div id="poptabs"></div>
+    <div id="poptitle"></div>
+  </div>
+  <div id="popbody"><div id="popzoom"></div></div>
+  <div id="popfoot"><span class="key">&#9650;&#9660;</span> scroll &nbsp; <span class="key">&#9664;&#9654;</span> next layer here &nbsp; <span class="key">Back</span> close</div>
+</div>
+
+<div id="help" class="panel">
+  <span class="hi"><b>Point &amp; click</b> the map for pop-ups</span>
+  <span class="hi"><span class="key">OK</span> pop-up at the cross</span>
+  <span class="hi"><span class="dot red"></span>layers</span>
+  <span class="hi"><span class="dot green"></span>basemap</span>
+  <span class="hi"><span class="dot yellow"></span>legend</span>
+  <span class="hi"><span class="dot blue"></span>all of Colorado</span>
+  <span class="hi"><span class="key">0-9</span> go to a GMU</span>
+</div>
+
+<div id="toast" class="panel hidden"></div>
+
+<script src="lib/leaflet.js"></script>
+<script src="lib/geojson-vt.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
